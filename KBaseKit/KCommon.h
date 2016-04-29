@@ -11,11 +11,11 @@
 
 @interface KCommon : KBaseManager
 
-@property (nonatomic) BOOL isLogin;
-@property (nonatomic) BOOL isAutoLogin;
-
+@property (nonatomic) BOOL debugMode; // default YES;
 
 #pragma mark - INFOMATION
+
++ (instancetype)shared;
 
 + (void)printInfomation;
 

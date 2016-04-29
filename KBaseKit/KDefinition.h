@@ -8,7 +8,6 @@
 
 // by .. http://matt.coneybeare.me/my-favorite-macros-for-objective-c-development-in-xcode/
 
-#import "KConfig.h"
 
 #define K_IsIPad   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define K_IsIPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)

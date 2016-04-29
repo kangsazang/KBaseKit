@@ -14,15 +14,41 @@
 @interface KCommon ()
 @end
 
+#define KFIRST_LUNCH_FINISHED_KEY   @"KFirst_Lunch_Finished_Key"
+#define KDEBUG_MODE_KEY             @"KDebug_Mode_Key"
+
 @implementation KCommon
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
+        if ([[NSUserDefaults standardUserDefaults] boolForKey:KFIRST_LUNCH_FINISHED_KEY] == NO) {
+            
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:KDEBUG_MODE_KEY];
 
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:KFIRST_LUNCH_FINISHED_KEY];
+            
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
     }
     return self;
+}
+
++ (instancetype)shared{
+    return [super shared];
+}
+
+
+- (BOOL)debugMode
+{
+    return [[NSUserDefaults standardUserDefaults] boolForKey:KDEBUG_MODE_KEY];
+}
+
+- (void)setDebugMode:(BOOL)debugMode
+{
+    [[NSUserDefaults standardUserDefaults] setBool:debugMode forKey:KDEBUG_MODE_KEY];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 #pragma mark - INFOMATION
@@ -47,25 +73,21 @@
     NSString *screenHeight = [NSString stringWithFormat:@"%.f pixel", [[UIScreen mainScreen] bounds].size.height];
     NSString *statusBarHeight = [NSString stringWithFormat:@"%.f pixel",[[UIApplication sharedApplication] statusBarFrame].size.height];
 
-    SYSLog(CO_LOG_GUBUN);
-    SYSLog(@"*");
+    [KCommon beautifulLog:@"" value:CO_LOG_GUBUN];
+    [KCommon beautifulLog:@"" value:@""];
     [KCommon beautifulLog:@"Application DisplayName" value:displayName];
     [KCommon beautifulLog:@"Application Identifier" value:[[NSBundle mainBundle] bundleIdentifier]];
     [KCommon beautifulLog:@"Application Version" value:applicationVersion];
     [KCommon beautifulLog:@"Application Build" value:applicationBuild];
-    SYSLog(@"*");
-    [KCommon beautifulLog:@"Platform" value:platform];
+    [KCommon beautifulLog:@"" value:@""];    [KCommon beautifulLog:@"Platform" value:platform];
     [KCommon beautifulLog:@"Device Model" value:[UIDevice currentDevice].model];
     [KCommon beautifulLog:@"System Version" value:systemVersion];
-    SYSLog(@"*");
-    [KCommon beautifulLog:@"Screen Width" value:screenWidth];
+    [KCommon beautifulLog:@"" value:@""];    [KCommon beautifulLog:@"Screen Width" value:screenWidth];
     [KCommon beautifulLog:@"Screen Height" value:screenHeight];
     [KCommon beautifulLog:@"StatusBar Height" value:statusBarHeight];
-    SYSLog(@"*");
-    SYSLog(@"*");
-
-    SYSLog(CO_LOG_GUBUN);
-    SYSLog(@"");
+    [KCommon beautifulLog:@"" value:@""];
+    [KCommon beautifulLog:@"" value:CO_LOG_GUBUN];
+    [KCommon beautifulLog:@"" value:@""];
 }
 
 + (void)beautifulLog:(NSString *)name value:(NSString *)value
@@ -81,7 +103,8 @@
     }
     
     [str appendString:value];
-    SYSLog(@"%@",str);
+    
+    printf("\n%s", [str cStringUsingEncoding:NSUTF8StringEncoding]);
 }
 
 + (NSString *) platform{

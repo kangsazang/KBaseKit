@@ -1,5 +1,5 @@
 use_frameworks!
 
 target 'KBaseKit_Example' do
-  pod 'KBaseKit', :path => '/Users/Chans/프로젝트/KBaseKit‘
+  pod 'KBaseKit'
 end
