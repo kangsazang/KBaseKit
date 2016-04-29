@@ -86,8 +86,7 @@
     [KCommon beautifulLog:@"Screen Height" value:screenHeight];
     [KCommon beautifulLog:@"StatusBar Height" value:statusBarHeight];
     [KCommon beautifulLog:@"" value:@""];
-    [KCommon beautifulLog:@"" value:CO_LOG_GUBUN];
-    [KCommon beautifulLog:@"" value:@""];
+    [KCommon beautifulLog:@"" value:[NSString stringWithFormat:@"%@\n",CO_LOG_GUBUN]];
 }
 
 + (void)beautifulLog:(NSString *)name value:(NSString *)value

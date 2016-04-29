@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KBaseKit"
-  s.version          = "0.0.4"
+  s.version          = "0.0.6"
   s.summary          = "iOS Base Project Kit"
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'KBaseKit/Classes/**/*'
+  s.source_files = 'KBaseKit/**/*'
   
   # s.resource_bundles = {
   #   'KBaseKit' => ['KBaseKit/Assets/*.png']
