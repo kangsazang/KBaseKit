@@ -1,0 +1,6 @@
+framework module KBaseKit {
+  umbrella header "KBaseKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

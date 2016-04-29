@@ -1,0 +1,19 @@
+{
+  "name": "KBaseKit",
+  "version": "0.1.0",
+  "summary": "A short description of KBaseKit.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/KBaseKit",
+  "license": "MIT",
+  "authors": {
+    "Chans": "monster@knagc.tk"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/KBaseKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KBaseKit/Classes/**/*"
+}
