@@ -8,16 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		22FE8F7923AFA2F97D4349F6AF3AA1BD /* Pods-KBaseKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 526BC89AD53219F75B9A2F25D06CA258 /* Pods-KBaseKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		452F681E1CD3231100CE50BC /* KCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68171CD3231100CE50BC /* KCommon.h */; };
-		452F681F1CD3231100CE50BC /* KCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68181CD3231100CE50BC /* KCommon.m */; };
-		452F68201CD3231100CE50BC /* KBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F681A1CD3231100CE50BC /* KBaseManager.h */; };
-		452F68211CD3231100CE50BC /* KBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F681B1CD3231100CE50BC /* KBaseManager.m */; };
-		452F68221CD3231100CE50BC /* KDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F681C1CD3231100CE50BC /* KDefinition.h */; };
-		452F68271CD32B0600CE50BC /* KDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F681C1CD3231100CE50BC /* KDefinition.h */; };
-		452F68281CD32B0600CE50BC /* KCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68171CD3231100CE50BC /* KCommon.h */; };
-		452F68291CD32B0600CE50BC /* KCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68181CD3231100CE50BC /* KCommon.m */; };
-		452F682A1CD32B1000CE50BC /* KBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F681B1CD3231100CE50BC /* KBaseManager.m */; };
-		452F682B1CD32B1200CE50BC /* KBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F681A1CD3231100CE50BC /* KBaseManager.h */; };
+		452F68411CD342B500CE50BC /* KBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F682E1CD342B500CE50BC /* KBaseManager.h */; };
+		452F68421CD342B500CE50BC /* KBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F682F1CD342B500CE50BC /* KBaseManager.m */; };
+		452F68431CD342B500CE50BC /* KBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68301CD342B500CE50BC /* KBaseModel.h */; };
+		452F68441CD342B500CE50BC /* KBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68311CD342B500CE50BC /* KBaseModel.m */; };
+		452F68451CD342B500CE50BC /* KBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68321CD342B500CE50BC /* KBaseView.h */; };
+		452F68461CD342B500CE50BC /* KBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68331CD342B500CE50BC /* KBaseView.m */; };
+		452F68471CD342B500CE50BC /* KBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68341CD342B500CE50BC /* KBaseViewController.h */; };
+		452F68481CD342B500CE50BC /* KBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68351CD342B500CE50BC /* KBaseViewController.m */; };
+		452F68491CD342B500CE50BC /* KBaseWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68361CD342B500CE50BC /* KBaseWebViewController.h */; };
+		452F684A1CD342B500CE50BC /* KBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68371CD342B500CE50BC /* KBaseWebViewController.m */; };
+		452F684B1CD342B500CE50BC /* UIView+SimpleFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68391CD342B500CE50BC /* UIView+SimpleFrame.h */; };
+		452F684C1CD342B500CE50BC /* UIView+SimpleFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F683A1CD342B500CE50BC /* UIView+SimpleFrame.m */; };
+		452F684D1CD342B500CE50BC /* KCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F683B1CD342B500CE50BC /* KCommon.h */; };
+		452F684E1CD342B500CE50BC /* KCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F683C1CD342B500CE50BC /* KCommon.m */; };
+		452F684F1CD342B500CE50BC /* KDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F683D1CD342B500CE50BC /* KDefinition.h */; };
+		452F68501CD342B500CE50BC /* KAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F683F1CD342B500CE50BC /* KAlertController.h */; };
+		452F68511CD342B500CE50BC /* KAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68401CD342B500CE50BC /* KAlertController.m */; };
 		52C509C01873377693264C4D654D3910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439B6634DDEDCAE2CA1AFBED1758911 /* Foundation.framework */; };
 		5F41EFFAC5FA1EE3A3E4C532BFE4DD1F /* KBaseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B90271418DA86377F860BD455B81612E /* KBaseKit-dummy.m */; };
 		7F1525CB1AD6D4AF2A3FA2234837CB98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439B6634DDEDCAE2CA1AFBED1758911 /* Foundation.framework */; };
@@ -42,11 +49,23 @@
 		2BF1263B3279ADC99153ED26F3167EC4 /* Pods-KBaseKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KBaseKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3D19DE6CC8DE8F6162A0BEF86BADCCC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EDFFBD95216A49BA68CDA6159DFC511 /* Pods-KBaseKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KBaseKit_Example-resources.sh"; sourceTree = "<group>"; };
-		452F68171CD3231100CE50BC /* KCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCommon.h; sourceTree = "<group>"; };
-		452F68181CD3231100CE50BC /* KCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCommon.m; sourceTree = "<group>"; };
-		452F681A1CD3231100CE50BC /* KBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBaseManager.h; sourceTree = "<group>"; };
-		452F681B1CD3231100CE50BC /* KBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBaseManager.m; sourceTree = "<group>"; };
-		452F681C1CD3231100CE50BC /* KDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDefinition.h; sourceTree = "<group>"; };
+		452F682E1CD342B500CE50BC /* KBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBaseManager.h; sourceTree = "<group>"; };
+		452F682F1CD342B500CE50BC /* KBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBaseManager.m; sourceTree = "<group>"; };
+		452F68301CD342B500CE50BC /* KBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBaseModel.h; sourceTree = "<group>"; };
+		452F68311CD342B500CE50BC /* KBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBaseModel.m; sourceTree = "<group>"; };
+		452F68321CD342B500CE50BC /* KBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBaseView.h; sourceTree = "<group>"; };
+		452F68331CD342B500CE50BC /* KBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBaseView.m; sourceTree = "<group>"; };
+		452F68341CD342B500CE50BC /* KBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBaseViewController.h; sourceTree = "<group>"; };
+		452F68351CD342B500CE50BC /* KBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBaseViewController.m; sourceTree = "<group>"; };
+		452F68361CD342B500CE50BC /* KBaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBaseWebViewController.h; sourceTree = "<group>"; };
+		452F68371CD342B500CE50BC /* KBaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBaseWebViewController.m; sourceTree = "<group>"; };
+		452F68391CD342B500CE50BC /* UIView+SimpleFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SimpleFrame.h"; sourceTree = "<group>"; };
+		452F683A1CD342B500CE50BC /* UIView+SimpleFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SimpleFrame.m"; sourceTree = "<group>"; };
+		452F683B1CD342B500CE50BC /* KCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCommon.h; sourceTree = "<group>"; };
+		452F683C1CD342B500CE50BC /* KCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCommon.m; sourceTree = "<group>"; };
+		452F683D1CD342B500CE50BC /* KDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDefinition.h; sourceTree = "<group>"; };
+		452F683F1CD342B500CE50BC /* KAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAlertController.h; sourceTree = "<group>"; };
+		452F68401CD342B500CE50BC /* KAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAlertController.m; sourceTree = "<group>"; };
 		48951FCF2D79B8BDC1898B5659231AA7 /* Pods-KBaseKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KBaseKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4C070D06EA1D7A70CB62AFC0D9CE4C81 /* KBaseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KBaseKit.modulemap; sourceTree = "<group>"; };
 		526BC89AD53219F75B9A2F25D06CA258 /* Pods-KBaseKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KBaseKit_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -92,13 +111,52 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		452F68191CD3231100CE50BC /* Base */ = {
+		452F682C1CD342B500CE50BC /* KBaseKit */ = {
 			isa = PBXGroup;
 			children = (
-				452F681A1CD3231100CE50BC /* KBaseManager.h */,
-				452F681B1CD3231100CE50BC /* KBaseManager.m */,
+				452F682D1CD342B500CE50BC /* Base */,
+				452F68381CD342B500CE50BC /* Categorys */,
+				452F683B1CD342B500CE50BC /* KCommon.h */,
+				452F683C1CD342B500CE50BC /* KCommon.m */,
+				452F683D1CD342B500CE50BC /* KDefinition.h */,
+				452F683E1CD342B500CE50BC /* UI */,
+			);
+			path = KBaseKit;
+			sourceTree = "<group>";
+		};
+		452F682D1CD342B500CE50BC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				452F682E1CD342B500CE50BC /* KBaseManager.h */,
+				452F682F1CD342B500CE50BC /* KBaseManager.m */,
+				452F68301CD342B500CE50BC /* KBaseModel.h */,
+				452F68311CD342B500CE50BC /* KBaseModel.m */,
+				452F68321CD342B500CE50BC /* KBaseView.h */,
+				452F68331CD342B500CE50BC /* KBaseView.m */,
+				452F68341CD342B500CE50BC /* KBaseViewController.h */,
+				452F68351CD342B500CE50BC /* KBaseViewController.m */,
+				452F68361CD342B500CE50BC /* KBaseWebViewController.h */,
+				452F68371CD342B500CE50BC /* KBaseWebViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		452F68381CD342B500CE50BC /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				452F68391CD342B500CE50BC /* UIView+SimpleFrame.h */,
+				452F683A1CD342B500CE50BC /* UIView+SimpleFrame.m */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		452F683E1CD342B500CE50BC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				452F683F1CD342B500CE50BC /* KAlertController.h */,
+				452F68401CD342B500CE50BC /* KAlertController.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		46FA56366B3FD3547A26603E734980F0 /* Development Pods */ = {
@@ -146,17 +204,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		B1108FB8FEFE87E7165963A868066292 /* KBaseKit */ = {
-			isa = PBXGroup;
-			children = (
-				452F681C1CD3231100CE50BC /* KDefinition.h */,
-				452F68171CD3231100CE50BC /* KCommon.h */,
-				452F68181CD3231100CE50BC /* KCommon.m */,
-				452F68191CD3231100CE50BC /* Base */,
-			);
-			path = KBaseKit;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +215,7 @@
 		C7B84028C0E6E7CA855298908A3D95E7 /* KBaseKit */ = {
 			isa = PBXGroup;
 			children = (
-				B1108FB8FEFE87E7165963A868066292 /* KBaseKit */,
+				452F682C1CD342B500CE50BC /* KBaseKit */,
 				DBD32AF57A4C5129C544402820DC40DD /* Support Files */,
 			);
 			name = KBaseKit;
@@ -206,10 +253,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				452F68281CD32B0600CE50BC /* KCommon.h in Headers */,
-				452F682B1CD32B1200CE50BC /* KBaseManager.h in Headers */,
 				22FE8F7923AFA2F97D4349F6AF3AA1BD /* Pods-KBaseKit_Example-umbrella.h in Headers */,
-				452F68271CD32B0600CE50BC /* KDefinition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,10 +261,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				452F681E1CD3231100CE50BC /* KCommon.h in Headers */,
-				452F68221CD3231100CE50BC /* KDefinition.h in Headers */,
-				452F68201CD3231100CE50BC /* KBaseManager.h in Headers */,
 				B50CA9ECA95EDC92DE689BF2AFD02CE2 /* KBaseKit-umbrella.h in Headers */,
+				452F68411CD342B500CE50BC /* KBaseManager.h in Headers */,
+				452F684F1CD342B500CE50BC /* KDefinition.h in Headers */,
+				452F68471CD342B500CE50BC /* KBaseViewController.h in Headers */,
+				452F684D1CD342B500CE50BC /* KCommon.h in Headers */,
+				452F68501CD342B500CE50BC /* KAlertController.h in Headers */,
+				452F68491CD342B500CE50BC /* KBaseWebViewController.h in Headers */,
+				452F68451CD342B500CE50BC /* KBaseView.h in Headers */,
+				452F684B1CD342B500CE50BC /* UIView+SimpleFrame.h in Headers */,
+				452F68431CD342B500CE50BC /* KBaseModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,9 +344,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				452F681F1CD3231100CE50BC /* KCommon.m in Sources */,
-				452F68211CD3231100CE50BC /* KBaseManager.m in Sources */,
+				452F684E1CD342B500CE50BC /* KCommon.m in Sources */,
+				452F68441CD342B500CE50BC /* KBaseModel.m in Sources */,
+				452F68421CD342B500CE50BC /* KBaseManager.m in Sources */,
+				452F684C1CD342B500CE50BC /* UIView+SimpleFrame.m in Sources */,
+				452F68481CD342B500CE50BC /* KBaseViewController.m in Sources */,
 				5F41EFFAC5FA1EE3A3E4C532BFE4DD1F /* KBaseKit-dummy.m in Sources */,
+				452F684A1CD342B500CE50BC /* KBaseWebViewController.m in Sources */,
+				452F68511CD342B500CE50BC /* KAlertController.m in Sources */,
+				452F68461CD342B500CE50BC /* KBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,8 +360,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				452F68291CD32B0600CE50BC /* KCommon.m in Sources */,
-				452F682A1CD32B1000CE50BC /* KBaseManager.m in Sources */,
 				9E02A7EF5804B582AC87A39B0811A48F /* Pods-KBaseKit_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
