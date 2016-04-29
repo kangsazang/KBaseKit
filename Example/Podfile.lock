@@ -1,14 +1,14 @@
 PODS:
-  - KBaseKit (0.1.0)
+  - KBaseKit (0.0.1)
 
 DEPENDENCIES:
-  - KBaseKit (from `../`)
+  - KBaseKit (from `/Users/Chans/프로젝트/KBaseKit`)
 
 EXTERNAL SOURCES:
   KBaseKit:
-    :path: ../
+    :path: /Users/Chans/프로젝트/KBaseKit
 
 SPEC CHECKSUMS:
-  KBaseKit: e8d616d78560ffbfa62fd2daf5c63b3123278b70
+  KBaseKit: 2df5a367f384e38d934294126691dcaeb6f51adb
 
 COCOAPODS: 0.38.2

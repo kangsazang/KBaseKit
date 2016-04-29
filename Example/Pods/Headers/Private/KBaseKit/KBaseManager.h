@@ -1,0 +1,1 @@
+../../../../../KBaseKit/Classes/Base/KBaseManager.h

@@ -1,714 +1,1304 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		1B670A99173439AE697E8436BC1A5EDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F647DD91B29676A2523E958B51620AA7 /* Foundation.framework */; };
-		22FE8F7923AFA2F97D4349F6AF3AA1BD /* Pods-KBaseKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 526BC89AD53219F75B9A2F25D06CA258 /* Pods-KBaseKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		452F68071CD317D300CE50BC /* KCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68031CD317D300CE50BC /* KCommon.h */; };
-		452F68081CD317D300CE50BC /* KCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68031CD317D300CE50BC /* KCommon.h */; };
-		452F68091CD317D300CE50BC /* KCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68041CD317D300CE50BC /* KCommon.m */; };
-		452F680A1CD317D300CE50BC /* KCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68041CD317D300CE50BC /* KCommon.m */; };
-		452F680B1CD317D300CE50BC /* KConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68051CD317D300CE50BC /* KConfig.h */; };
-		452F680C1CD317D300CE50BC /* KConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68051CD317D300CE50BC /* KConfig.h */; };
-		452F680D1CD317D300CE50BC /* KDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68061CD317D300CE50BC /* KDefinition.h */; };
-		452F680E1CD317D300CE50BC /* KDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68061CD317D300CE50BC /* KDefinition.h */; };
-		452F68121CD3181300CE50BC /* KBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68101CD3181300CE50BC /* KBaseManager.h */; };
-		452F68131CD3181300CE50BC /* KBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68101CD3181300CE50BC /* KBaseManager.h */; };
-		452F68141CD3181300CE50BC /* KBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68111CD3181300CE50BC /* KBaseManager.m */; };
-		452F68151CD3181300CE50BC /* KBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68111CD3181300CE50BC /* KBaseManager.m */; };
-		52C509C01873377693264C4D654D3910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F647DD91B29676A2523E958B51620AA7 /* Foundation.framework */; };
-		7FE11603A65091867CA6A8A3A60E9AFD /* KBaseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE713692436E36300F662364CCA56A2 /* KBaseKit-dummy.m */; };
-		894A686132685F6E1E24F8A3F0B14472 /* Pods-KBaseKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C30D2182C45117C77EB7A513ACA1E /* Pods-KBaseKit_Tests-dummy.m */; };
-		95079D4BC4FCBA99400C70D329C216D8 /* KBaseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A94C31D32FA07AE1148E59E0612A41 /* KBaseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E02A7EF5804B582AC87A39B0811A48F /* Pods-KBaseKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D528F80DF8A611F430F80031049C594C /* Pods-KBaseKit_Example-dummy.m */; };
-		E05F67EC7CB208BB2F5D011E3F6885D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F647DD91B29676A2523E958B51620AA7 /* Foundation.framework */; };
-		E8E11298F20CEBE99CB318DBB53174E9 /* Pods-KBaseKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E142AF53A79DAF3DB3543A04159156B /* Pods-KBaseKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5B66CB8B30DCA2D8515181FFD33BF781 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 237AA03ADBFDC15E7182CADBD43DB01E;
-			remoteInfo = KBaseKit;
-		};
-		9E427A0D39716828B4C9205CFA4FDEA7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 237AA03ADBFDC15E7182CADBD43DB01E;
-			remoteInfo = KBaseKit;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		01C8C101E1982FA78A62B162DCAA5C46 /* Pods-KBaseKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KBaseKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		0F0F9E9F2394DA8A96887C3846547720 /* KBaseKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "KBaseKit-Private.xcconfig"; sourceTree = "<group>"; };
-		10B55D4007E597C6FC3D2E387363D3C4 /* Pods-KBaseKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KBaseKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1119193F2F0ECA464B5BA2E7A2B121E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1850BB67ADA2DECBCFB196F90639CC68 /* Pods-KBaseKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KBaseKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1A3363084765A4FE7331B36370652764 /* Pods-KBaseKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KBaseKit_Tests.modulemap"; sourceTree = "<group>"; };
-		25F60BB6BBBCC7996F0567F28BD80204 /* KBaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KBaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BF1263B3279ADC99153ED26F3167EC4 /* Pods-KBaseKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KBaseKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2E142AF53A79DAF3DB3543A04159156B /* Pods-KBaseKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KBaseKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		37A94C31D32FA07AE1148E59E0612A41 /* KBaseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KBaseKit-umbrella.h"; sourceTree = "<group>"; };
-		3918E2BA50511A224754E24865E29A78 /* Pods-KBaseKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KBaseKit_Tests-resources.sh"; sourceTree = "<group>"; };
-		3D82F65F0F25D9EDB3C10350CA53C932 /* Pods-KBaseKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KBaseKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3ED3A3BFE8993747F2EACFCBA8C5DDE9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		452F68031CD317D300CE50BC /* KCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCommon.h; sourceTree = "<group>"; };
-		452F68041CD317D300CE50BC /* KCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCommon.m; sourceTree = "<group>"; };
-		452F68051CD317D300CE50BC /* KConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConfig.h; sourceTree = "<group>"; };
-		452F68061CD317D300CE50BC /* KDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDefinition.h; sourceTree = "<group>"; };
-		452F68101CD3181300CE50BC /* KBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBaseManager.h; sourceTree = "<group>"; };
-		452F68111CD3181300CE50BC /* KBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBaseManager.m; sourceTree = "<group>"; };
-		481BA7C6619D20D5D57184290A8E2CB6 /* KBaseKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KBaseKit-prefix.pch"; sourceTree = "<group>"; };
-		4D1C30D2182C45117C77EB7A513ACA1E /* Pods-KBaseKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KBaseKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		526BC89AD53219F75B9A2F25D06CA258 /* Pods-KBaseKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KBaseKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		55248CA869ED70CAEE50BB27C60BC3C4 /* Pods-KBaseKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KBaseKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5AE713692436E36300F662364CCA56A2 /* KBaseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KBaseKit-dummy.m"; sourceTree = "<group>"; };
-		734454981D26DCA1DBE94B6354774553 /* Pods-KBaseKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KBaseKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		861D16CC746C070484F47F57998DB6B8 /* KBaseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KBaseKit.modulemap; sourceTree = "<group>"; };
-		94A6E26B194D4A0997F0E6CE3FD97615 /* Pods-KBaseKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KBaseKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BCCA063DA09747FC085B21FBD30332D9 /* Pods-KBaseKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KBaseKit_Example.modulemap"; sourceTree = "<group>"; };
-		BE5C88DA77019FC57B84545A4E414BB7 /* Pods-KBaseKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KBaseKit_Example-resources.sh"; sourceTree = "<group>"; };
-		BEDBD7824B2A70270371A87D16BAA9DD /* Pods-KBaseKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KBaseKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C2DB6087132ACBBA8452F8AA148655C0 /* Pods-KBaseKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KBaseKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D528F80DF8A611F430F80031049C594C /* Pods-KBaseKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KBaseKit_Example-dummy.m"; sourceTree = "<group>"; };
-		D529A3287103AC4AF55712FB8CC7AF5E /* Pods_KBaseKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KBaseKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8A9A4A29C6C5931CD5B2858FC436084 /* KBaseKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KBaseKit.xcconfig; sourceTree = "<group>"; };
-		DCC285F9252ABA24B0E7D20A5E108F69 /* Pods_KBaseKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KBaseKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF48B3E7C30292D434BBCB41413D3566 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F647DD91B29676A2523E958B51620AA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C4FEC5BECEE6BD4B0C3408717F0E1701 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52C509C01873377693264C4D654D3910 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D28F9D7F64E1BC43292D19F16FF94B8D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E05F67EC7CB208BB2F5D011E3F6885D0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F07961CC8C720BA8B202A2C63152E507 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B670A99173439AE697E8436BC1A5EDF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		113913A85A899DD49CADA6DB4CAE8331 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AD758F843060C78DAFFF5CF75FC9E0A6 /* KBaseKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		24F7BCCB5918BCDD71130AC2D803349C /* KBaseKit */ = {
-			isa = PBXGroup;
-			children = (
-				49F38915A4946248058D1CD567300638 /* Classes */,
-			);
-			path = KBaseKit;
-			sourceTree = "<group>";
-		};
-		35CA815788000DF592490B3B2DE8478E /* Pods-KBaseKit_Example */ = {
-			isa = PBXGroup;
-			children = (
-				1119193F2F0ECA464B5BA2E7A2B121E6 /* Info.plist */,
-				BCCA063DA09747FC085B21FBD30332D9 /* Pods-KBaseKit_Example.modulemap */,
-				55248CA869ED70CAEE50BB27C60BC3C4 /* Pods-KBaseKit_Example-acknowledgements.markdown */,
-				C2DB6087132ACBBA8452F8AA148655C0 /* Pods-KBaseKit_Example-acknowledgements.plist */,
-				D528F80DF8A611F430F80031049C594C /* Pods-KBaseKit_Example-dummy.m */,
-				734454981D26DCA1DBE94B6354774553 /* Pods-KBaseKit_Example-frameworks.sh */,
-				BE5C88DA77019FC57B84545A4E414BB7 /* Pods-KBaseKit_Example-resources.sh */,
-				526BC89AD53219F75B9A2F25D06CA258 /* Pods-KBaseKit_Example-umbrella.h */,
-				2BF1263B3279ADC99153ED26F3167EC4 /* Pods-KBaseKit_Example.debug.xcconfig */,
-				BEDBD7824B2A70270371A87D16BAA9DD /* Pods-KBaseKit_Example.release.xcconfig */,
-			);
-			name = "Pods-KBaseKit_Example";
-			path = "Target Support Files/Pods-KBaseKit_Example";
-			sourceTree = "<group>";
-		};
-		452F680F1CD3181300CE50BC /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				452F68101CD3181300CE50BC /* KBaseManager.h */,
-				452F68111CD3181300CE50BC /* KBaseManager.m */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		49F38915A4946248058D1CD567300638 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				452F680F1CD3181300CE50BC /* Base */,
-				452F68031CD317D300CE50BC /* KCommon.h */,
-				452F68041CD317D300CE50BC /* KCommon.m */,
-				452F68051CD317D300CE50BC /* KConfig.h */,
-				452F68061CD317D300CE50BC /* KDefinition.h */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				F647DD91B29676A2523E958B51620AA7 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		76F9EF44C67D9E4FD51396351CC3ED67 /* Pods-KBaseKit_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				EF48B3E7C30292D434BBCB41413D3566 /* Info.plist */,
-				1A3363084765A4FE7331B36370652764 /* Pods-KBaseKit_Tests.modulemap */,
-				3D82F65F0F25D9EDB3C10350CA53C932 /* Pods-KBaseKit_Tests-acknowledgements.markdown */,
-				94A6E26B194D4A0997F0E6CE3FD97615 /* Pods-KBaseKit_Tests-acknowledgements.plist */,
-				4D1C30D2182C45117C77EB7A513ACA1E /* Pods-KBaseKit_Tests-dummy.m */,
-				01C8C101E1982FA78A62B162DCAA5C46 /* Pods-KBaseKit_Tests-frameworks.sh */,
-				3918E2BA50511A224754E24865E29A78 /* Pods-KBaseKit_Tests-resources.sh */,
-				2E142AF53A79DAF3DB3543A04159156B /* Pods-KBaseKit_Tests-umbrella.h */,
-				10B55D4007E597C6FC3D2E387363D3C4 /* Pods-KBaseKit_Tests.debug.xcconfig */,
-				1850BB67ADA2DECBCFB196F90639CC68 /* Pods-KBaseKit_Tests.release.xcconfig */,
-			);
-			name = "Pods-KBaseKit_Tests";
-			path = "Target Support Files/Pods-KBaseKit_Tests";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				113913A85A899DD49CADA6DB4CAE8331 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				C92A70B9476E5860DDFEAFFFB5A0BA57 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		AD758F843060C78DAFFF5CF75FC9E0A6 /* KBaseKit */ = {
-			isa = PBXGroup;
-			children = (
-				24F7BCCB5918BCDD71130AC2D803349C /* KBaseKit */,
-				F36F3C06B4BEAAC266001405C6F0A153 /* Support Files */,
-			);
-			name = KBaseKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C92A70B9476E5860DDFEAFFFB5A0BA57 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				35CA815788000DF592490B3B2DE8478E /* Pods-KBaseKit_Example */,
-				76F9EF44C67D9E4FD51396351CC3ED67 /* Pods-KBaseKit_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				25F60BB6BBBCC7996F0567F28BD80204 /* KBaseKit.framework */,
-				D529A3287103AC4AF55712FB8CC7AF5E /* Pods_KBaseKit_Example.framework */,
-				DCC285F9252ABA24B0E7D20A5E108F69 /* Pods_KBaseKit_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F36F3C06B4BEAAC266001405C6F0A153 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3ED3A3BFE8993747F2EACFCBA8C5DDE9 /* Info.plist */,
-				861D16CC746C070484F47F57998DB6B8 /* KBaseKit.modulemap */,
-				D8A9A4A29C6C5931CD5B2858FC436084 /* KBaseKit.xcconfig */,
-				0F0F9E9F2394DA8A96887C3846547720 /* KBaseKit-Private.xcconfig */,
-				5AE713692436E36300F662364CCA56A2 /* KBaseKit-dummy.m */,
-				481BA7C6619D20D5D57184290A8E2CB6 /* KBaseKit-prefix.pch */,
-				37A94C31D32FA07AE1148E59E0612A41 /* KBaseKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KBaseKit";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		0A74EC7B7A57CA0DB50C02AC8EBD014D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				452F680C1CD317D300CE50BC /* KConfig.h in Headers */,
-				22FE8F7923AFA2F97D4349F6AF3AA1BD /* Pods-KBaseKit_Example-umbrella.h in Headers */,
-				452F68081CD317D300CE50BC /* KCommon.h in Headers */,
-				452F68131CD3181300CE50BC /* KBaseManager.h in Headers */,
-				452F680E1CD317D300CE50BC /* KDefinition.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A0CC8573ECA80BF4BCE833452F9ACDA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8E11298F20CEBE99CB318DBB53174E9 /* Pods-KBaseKit_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C56F29F98EB2282E7209D2F5AFAB864 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				452F680B1CD317D300CE50BC /* KConfig.h in Headers */,
-				95079D4BC4FCBA99400C70D329C216D8 /* KBaseKit-umbrella.h in Headers */,
-				452F68071CD317D300CE50BC /* KCommon.h in Headers */,
-				452F68121CD3181300CE50BC /* KBaseManager.h in Headers */,
-				452F680D1CD317D300CE50BC /* KDefinition.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		237AA03ADBFDC15E7182CADBD43DB01E /* KBaseKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B0B02ED6F426F1B5F74037F3F413DA2E /* Build configuration list for PBXNativeTarget "KBaseKit" */;
-			buildPhases = (
-				1926533473B6E5BCB61885E0E02ECECD /* Sources */,
-				F07961CC8C720BA8B202A2C63152E507 /* Frameworks */,
-				9C56F29F98EB2282E7209D2F5AFAB864 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KBaseKit;
-			productName = KBaseKit;
-			productReference = 25F60BB6BBBCC7996F0567F28BD80204 /* KBaseKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		455F272131F05C9A380FABA4ADE2C6A8 /* Pods-KBaseKit_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CD4DA3987344900FD7C788140B88F338 /* Build configuration list for PBXNativeTarget "Pods-KBaseKit_Example" */;
-			buildPhases = (
-				E4A4B8EB311F78A68EBE9EF6509EBCF7 /* Sources */,
-				C4FEC5BECEE6BD4B0C3408717F0E1701 /* Frameworks */,
-				0A74EC7B7A57CA0DB50C02AC8EBD014D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				33AAB2D83B84B06EE86A408FDF6F0170 /* PBXTargetDependency */,
-			);
-			name = "Pods-KBaseKit_Example";
-			productName = "Pods-KBaseKit_Example";
-			productReference = D529A3287103AC4AF55712FB8CC7AF5E /* Pods_KBaseKit_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A4176706E79E656D7EC967B9C2AE35BE /* Pods-KBaseKit_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 733A9A3D8370CB60A3197A47FC7FFDB6 /* Build configuration list for PBXNativeTarget "Pods-KBaseKit_Tests" */;
-			buildPhases = (
-				7CC12A8E87F9D2FF4514E1C852962A68 /* Sources */,
-				D28F9D7F64E1BC43292D19F16FF94B8D /* Frameworks */,
-				1A0CC8573ECA80BF4BCE833452F9ACDA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C503A0B2F799B2EDF0B86F2565E8712A /* PBXTargetDependency */,
-			);
-			name = "Pods-KBaseKit_Tests";
-			productName = "Pods-KBaseKit_Tests";
-			productReference = DCC285F9252ABA24B0E7D20A5E108F69 /* Pods_KBaseKit_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				237AA03ADBFDC15E7182CADBD43DB01E /* KBaseKit */,
-				455F272131F05C9A380FABA4ADE2C6A8 /* Pods-KBaseKit_Example */,
-				A4176706E79E656D7EC967B9C2AE35BE /* Pods-KBaseKit_Tests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		1926533473B6E5BCB61885E0E02ECECD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				452F68091CD317D300CE50BC /* KCommon.m in Sources */,
-				452F68141CD3181300CE50BC /* KBaseManager.m in Sources */,
-				7FE11603A65091867CA6A8A3A60E9AFD /* KBaseKit-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7CC12A8E87F9D2FF4514E1C852962A68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				894A686132685F6E1E24F8A3F0B14472 /* Pods-KBaseKit_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E4A4B8EB311F78A68EBE9EF6509EBCF7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				452F680A1CD317D300CE50BC /* KCommon.m in Sources */,
-				452F68151CD3181300CE50BC /* KBaseManager.m in Sources */,
-				9E02A7EF5804B582AC87A39B0811A48F /* Pods-KBaseKit_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		33AAB2D83B84B06EE86A408FDF6F0170 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KBaseKit;
-			target = 237AA03ADBFDC15E7182CADBD43DB01E /* KBaseKit */;
-			targetProxy = 9E427A0D39716828B4C9205CFA4FDEA7 /* PBXContainerItemProxy */;
-		};
-		C503A0B2F799B2EDF0B86F2565E8712A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KBaseKit;
-			target = 237AA03ADBFDC15E7182CADBD43DB01E /* KBaseKit */;
-			targetProxy = 5B66CB8B30DCA2D8515181FFD33BF781 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		06F0A185149B99309EF16FA9B98ED9BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1850BB67ADA2DECBCFB196F90639CC68 /* Pods-KBaseKit_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KBaseKit_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-KBaseKit_Tests/Pods-KBaseKit_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_KBaseKit_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		70CEE9282446847198A0B31517283474 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEDBD7824B2A70270371A87D16BAA9DD /* Pods-KBaseKit_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KBaseKit_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-KBaseKit_Example/Pods-KBaseKit_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_KBaseKit_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9A0021354A3C585DB47BB020613292E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BF1263B3279ADC99153ED26F3167EC4 /* Pods-KBaseKit_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KBaseKit_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-KBaseKit_Example/Pods-KBaseKit_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_KBaseKit_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A7C0E55981EAF13A5161FBC6B2410F42 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F0F9E9F2394DA8A96887C3846547720 /* KBaseKit-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KBaseKit/KBaseKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KBaseKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KBaseKit/KBaseKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = KBaseKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DAED6B168FFF29CA54C08CC091332615 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F0F9E9F2394DA8A96887C3846547720 /* KBaseKit-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KBaseKit/KBaseKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KBaseKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KBaseKit/KBaseKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = KBaseKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FDB0B1D2F31528EE8145DD71A7335EEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10B55D4007E597C6FC3D2E387363D3C4 /* Pods-KBaseKit_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KBaseKit_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-KBaseKit_Tests/Pods-KBaseKit_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_KBaseKit_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		733A9A3D8370CB60A3197A47FC7FFDB6 /* Build configuration list for PBXNativeTarget "Pods-KBaseKit_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FDB0B1D2F31528EE8145DD71A7335EEC /* Debug */,
-				06F0A185149B99309EF16FA9B98ED9BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B0B02ED6F426F1B5F74037F3F413DA2E /* Build configuration list for PBXNativeTarget "KBaseKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A7C0E55981EAF13A5161FBC6B2410F42 /* Debug */,
-				DAED6B168FFF29CA54C08CC091332615 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CD4DA3987344900FD7C788140B88F338 /* Build configuration list for PBXNativeTarget "Pods-KBaseKit_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9A0021354A3C585DB47BB020613292E0 /* Debug */,
-				70CEE9282446847198A0B31517283474 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>00049FF3902476F94E7F900333A8BBC2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>KBaseKit-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>068CCFD2A4BDA66AA7253402C9EFCE16</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4C8EA2CCFD9D0C8233E91E04C4F65CED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09F552DD877E3620C07293D04B5D76A5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>KDefinition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0A74EC7B7A57CA0DB50C02AC8EBD014D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>22FE8F7923AFA2F97D4349F6AF3AA1BD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>0FDBDF34BF83E3BFD4139FCCFB233836</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>KBaseKit.framework</string>
+			<key>path</key>
+			<string>KBaseKit.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1A0E0A8CDAECB8AF0AC81DF55740DF72</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2776596535E7733AE815B4FA7AB8EAF5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1C0FB0411A7AAD6E1AD5583646B8CB33</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-KBaseKit_Example-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>22FE8F7923AFA2F97D4349F6AF3AA1BD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>526BC89AD53219F75B9A2F25D06CA258</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>23028ED85431799C9AB7C074850F5B56</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>KCommon.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2776596535E7733AE815B4FA7AB8EAF5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>KCommon.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2BF1263B3279ADC99153ED26F3167EC4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-KBaseKit_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>552D02D5BA751AC2E8790D2811D496CA</string>
+				<string>10DE1947DAC0ED28F6C0A9F9BD75D546</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3C53BFEAFA7DD314743F3770FB27F404</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>KConfig.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D19DE6CC8DE8F6162A0BEF86BADCCC4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3EDFFBD95216A49BA68CDA6159DFC511</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-KBaseKit_Example-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>455F272131F05C9A380FABA4ADE2C6A8</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CD4DA3987344900FD7C788140B88F338</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E4A4B8EB311F78A68EBE9EF6509EBCF7</string>
+				<string>C4FEC5BECEE6BD4B0C3408717F0E1701</string>
+				<string>0A74EC7B7A57CA0DB50C02AC8EBD014D</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C90931008B69B3A2F7E389A0CBF6EE11</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-KBaseKit_Example</string>
+			<key>productName</key>
+			<string>Pods-KBaseKit_Example</string>
+			<key>productReference</key>
+			<string>D529A3287103AC4AF55712FB8CC7AF5E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>46FA56366B3FD3547A26603E734980F0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C7B84028C0E6E7CA855298908A3D95E7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>48951FCF2D79B8BDC1898B5659231AA7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-KBaseKit_Example-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C070D06EA1D7A70CB62AFC0D9CE4C81</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>KBaseKit.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C8EA2CCFD9D0C8233E91E04C4F65CED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3D19DE6CC8DE8F6162A0BEF86BADCCC4</string>
+				<string>CA5CFA9439DBA86150CAA6CC7A3A416B</string>
+				<string>E9D3106860860CE62B957C03D7F36949</string>
+				<string>1C0FB0411A7AAD6E1AD5583646B8CB33</string>
+				<string>D528F80DF8A611F430F80031049C594C</string>
+				<string>48951FCF2D79B8BDC1898B5659231AA7</string>
+				<string>3EDFFBD95216A49BA68CDA6159DFC511</string>
+				<string>526BC89AD53219F75B9A2F25D06CA258</string>
+				<string>2BF1263B3279ADC99153ED26F3167EC4</string>
+				<string>BEDBD7824B2A70270371A87D16BAA9DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-KBaseKit_Example</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-KBaseKit_Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>526BC89AD53219F75B9A2F25D06CA258</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-KBaseKit_Example-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>52C509C01873377693264C4D654D3910</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5439B6634DDEDCAE2CA1AFBED1758911</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>53F661C0CA7190D2CF05023FB33D61E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5439B6634DDEDCAE2CA1AFBED1758911</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5439B6634DDEDCAE2CA1AFBED1758911</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>552D02D5BA751AC2E8790D2811D496CA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5F41EFFAC5FA1EE3A3E4C532BFE4DD1F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B90271418DA86377F860BD455B81612E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>70CEE9282446847198A0B31517283474</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>BEDBD7824B2A70270371A87D16BAA9DD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-KBaseKit_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-KBaseKit_Example/Pods-KBaseKit_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_KBaseKit_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7337203E3EF507842DA0E12EA0AEEBD4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>KBaseManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>46FA56366B3FD3547A26603E734980F0</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>CCA510CFBEA2D207524CDA0D73C3B561</string>
+				<string>068CCFD2A4BDA66AA7253402C9EFCE16</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F1525CB1AD6D4AF2A3FA2234837CB98</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5439B6634DDEDCAE2CA1AFBED1758911</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8407D538176ABC4289386EBC1B67B93D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>KBaseKit-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8602DF5670A077E3B5983BAF589AEBEC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5F41EFFAC5FA1EE3A3E4C532BFE4DD1F</string>
+				<string>A101FB467282AB7472328718D1DBB0F0</string>
+				<string>8774076F76A1EB7286193DAB07CA0FCF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8633CF470E81FC846D19C27FACB08B29</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>KBaseManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>86F787EAEE3094D375F3F9187E6874F7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7337203E3EF507842DA0E12EA0AEEBD4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8774076F76A1EB7286193DAB07CA0FCF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>23028ED85431799C9AB7C074850F5B56</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8D49E49B40EDF18E8B489B039253BFCF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7F1525CB1AD6D4AF2A3FA2234837CB98</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>901B52491B06A37C850A3DDAD94A8143</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>D6A36D4C34C7484F858AC8A1FC4A918C</string>
+			<key>remoteInfo</key>
+			<string>KBaseKit</string>
+		</dict>
+		<key>9A0021354A3C585DB47BB020613292E0</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2BF1263B3279ADC99153ED26F3167EC4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-KBaseKit_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-KBaseKit_Example/Pods-KBaseKit_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_KBaseKit_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9C8B38CCB15035169F6AB7ACD994C5F7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3C53BFEAFA7DD314743F3770FB27F404</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>9E02A7EF5804B582AC87A39B0811A48F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D528F80DF8A611F430F80031049C594C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E2CE3EBFC341560234E93843907AD4C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>KBaseKit.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A101FB467282AB7472328718D1DBB0F0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8633CF470E81FC846D19C27FACB08B29</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A2225ED949F120AFE15A276A60640186</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>KBaseKit-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B1108FB8FEFE87E7165963A868066292</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E2C69CFDDC66557CCBDB5F24D25FE827</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>KBaseKit</string>
+			<key>path</key>
+			<string>KBaseKit</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B50CA9ECA95EDC92DE689BF2AFD02CE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8407D538176ABC4289386EBC1B67B93D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B6289852492EC1B092851BB1090B83EF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7337203E3EF507842DA0E12EA0AEEBD4</string>
+				<string>8633CF470E81FC846D19C27FACB08B29</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B90271418DA86377F860BD455B81612E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>KBaseKit-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>53F661C0CA7190D2CF05023FB33D61E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BEDBD7824B2A70270371A87D16BAA9DD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-KBaseKit_Example.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C193A3C3C8739F55188E14C53AA7B1F2</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A2225ED949F120AFE15A276A60640186</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>0.0.1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>0.0.1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>$(CURRENT_PROJECT_VERSION)</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/KBaseKit/KBaseKit-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/KBaseKit/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/KBaseKit/KBaseKit.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>KBaseKit</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C3602948D38DD7051A08958E7DB8093E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4FEC5BECEE6BD4B0C3408717F0E1701</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>52C509C01873377693264C4D654D3910</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C7B84028C0E6E7CA855298908A3D95E7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B1108FB8FEFE87E7165963A868066292</string>
+				<string>DBD32AF57A4C5129C544402820DC40DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>KBaseKit</string>
+			<key>path</key>
+			<string>/Users/Chans/&#4369;&#4467;&#4357;&#4457;&#4364;&#4454;&#4520;&#4368;&#4467;/KBaseKit</string>
+			<key>sourceTree</key>
+			<string>&lt;absolute&gt;</string>
+		</dict>
+		<key>C90931008B69B3A2F7E389A0CBF6EE11</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>KBaseKit</string>
+			<key>target</key>
+			<string>D6A36D4C34C7484F858AC8A1FC4A918C</string>
+			<key>targetProxy</key>
+			<string>901B52491B06A37C850A3DDAD94A8143</string>
+		</dict>
+		<key>CA5CFA9439DBA86150CAA6CC7A3A416B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-KBaseKit_Example.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCA510CFBEA2D207524CDA0D73C3B561</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0FDBDF34BF83E3BFD4139FCCFB233836</string>
+				<string>D529A3287103AC4AF55712FB8CC7AF5E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CD4DA3987344900FD7C788140B88F338</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9A0021354A3C585DB47BB020613292E0</string>
+				<string>70CEE9282446847198A0B31517283474</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D36608829D665AF2446D9F5380073E76</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09F552DD877E3620C07293D04B5D76A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D371509C00A89F80857D18F44706A0E4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A2225ED949F120AFE15A276A60640186</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>0.0.1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>0.0.1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>$(CURRENT_PROJECT_VERSION)</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/KBaseKit/KBaseKit-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/KBaseKit/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/KBaseKit/KBaseKit.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>KBaseKit</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>CCA510CFBEA2D207524CDA0D73C3B561</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>D6A36D4C34C7484F858AC8A1FC4A918C</string>
+				<string>455F272131F05C9A380FABA4ADE2C6A8</string>
+			</array>
+		</dict>
+		<key>D528F80DF8A611F430F80031049C594C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-KBaseKit_Example-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D529A3287103AC4AF55712FB8CC7AF5E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_KBaseKit_Example.framework</string>
+			<key>path</key>
+			<string>Pods_KBaseKit_Example.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>D6A36D4C34C7484F858AC8A1FC4A918C</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F316B15704A44D63DA2548FD50982196</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8602DF5670A077E3B5983BAF589AEBEC</string>
+				<string>8D49E49B40EDF18E8B489B039253BFCF</string>
+				<string>E69A59697EDAF76892C39BF4000C1D66</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>KBaseKit</string>
+			<key>productName</key>
+			<string>KBaseKit</string>
+			<key>productReference</key>
+			<string>0FDBDF34BF83E3BFD4139FCCFB233836</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>DBD32AF57A4C5129C544402820DC40DD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C3602948D38DD7051A08958E7DB8093E</string>
+				<string>4C070D06EA1D7A70CB62AFC0D9CE4C81</string>
+				<string>9E2CE3EBFC341560234E93843907AD4C</string>
+				<string>A2225ED949F120AFE15A276A60640186</string>
+				<string>B90271418DA86377F860BD455B81612E</string>
+				<string>00049FF3902476F94E7F900333A8BBC2</string>
+				<string>8407D538176ABC4289386EBC1B67B93D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/KBaseKit</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2C69CFDDC66557CCBDB5F24D25FE827</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2776596535E7733AE815B4FA7AB8EAF5</string>
+				<string>23028ED85431799C9AB7C074850F5B56</string>
+				<string>3C53BFEAFA7DD314743F3770FB27F404</string>
+				<string>09F552DD877E3620C07293D04B5D76A5</string>
+				<string>B6289852492EC1B092851BB1090B83EF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E4A4B8EB311F78A68EBE9EF6509EBCF7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9E02A7EF5804B582AC87A39B0811A48F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E69A59697EDAF76892C39BF4000C1D66</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B50CA9ECA95EDC92DE689BF2AFD02CE2</string>
+				<string>86F787EAEE3094D375F3F9187E6874F7</string>
+				<string>1A0E0A8CDAECB8AF0AC81DF55740DF72</string>
+				<string>9C8B38CCB15035169F6AB7ACD994C5F7</string>
+				<string>D36608829D665AF2446D9F5380073E76</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E9D3106860860CE62B957C03D7F36949</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-KBaseKit_Example-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F316B15704A44D63DA2548FD50982196</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D371509C00A89F80857D18F44706A0E4</string>
+				<string>C193A3C3C8739F55188E14C53AA7B1F2</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

@@ -1,11 +1,5 @@
 use_frameworks!
 
-target 'KBaseKit_Example', :exclusive => true do
-  pod 'KBaseKit', :path => '../'
-end
-
-target 'KBaseKit_Tests', :exclusive => true do
-  pod 'KBaseKit', :path => '../'
-
-  
+target 'KBaseKit_Example' do
+  pod 'KBaseKit', :path => '/Users/Chans/프로젝트/KBaseKit‘
 end
