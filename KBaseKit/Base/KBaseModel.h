@@ -13,7 +13,7 @@
 /*! 프로퍼티 변수들의 값을 딕셔너리 형태로 변환해 반환한다. */
 - (NSDictionary *)convertDictionary;
 
-/*! 프로퍼티 변수들의 값을 로그로 출력한다 */
+/*! 프로퍼티 변수들의 값을 출력한다 */
 - (void)printPropertys;
 
 @end

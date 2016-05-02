@@ -26,7 +26,7 @@
 
 ///*! Default Log */
 #ifndef NSLog
-    #if K_LOG_MODE
+    #if DEBUG
         #define NSLog(...) do { fprintf(stdout, "\n %s[Line:%d] %s \n", __func__, __LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String]); } while (0)
     #else
         #define NSLog(...) do { fprintf(stdout, "\n %s[Line:%d] %s \n", __func__, __LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String]); } while (0)
@@ -35,7 +35,7 @@
 
 /*! SYSTEM Log */
 #ifndef SYSLog
-    #if K_LOG_MODE
+    #if DEBUG
         #define SYSLog(...) do { fprintf(stdout, "\n%s", [[NSString stringWithFormat:__VA_ARGS__] UTF8String]); } while (0)
     #else
         #define SYSLog(...) do { } while (0)
@@ -51,6 +51,16 @@
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  |
+ |      Debug Alert
+ |
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#define KAlert(MSG)     if(K_DEV_MODE) { [[[UIAlertView alloc] initWithTitle:@"DEUBG Alert" message:MSG delegate:nil cancelButtonTitle:@"확인" otherButtonTitles:nil] show]; }
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ |
  |      Color MACRO
  |
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -62,14 +72,5 @@
                                                 blue:((float)(c & 0xFF))/255.0 \
                                                 alpha:a]
 #define K_HexColor(c)     K_HexColorAlpha(c,1.0)
-
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- |
- |      Debug Alert
- |
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-#define KAlert(MSG)     if(K_DEV_MODE) { [[[UIAlertView alloc] initWithTitle:@"DEUBG Alert" message:MSG delegate:nil cancelButtonTitle:@"확인" otherButtonTitles:nil] show]; }
 
 

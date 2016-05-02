@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		22FE8F7923AFA2F97D4349F6AF3AA1BD /* Pods-KBaseKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 526BC89AD53219F75B9A2F25D06CA258 /* Pods-KBaseKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		452F68411CD342B500CE50BC /* KBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F682E1CD342B500CE50BC /* KBaseManager.h */; };
+		452F68411CD342B500CE50BC /* KBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F682E1CD342B500CE50BC /* KBaseManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452F68421CD342B500CE50BC /* KBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F682F1CD342B500CE50BC /* KBaseManager.m */; };
-		452F68431CD342B500CE50BC /* KBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68301CD342B500CE50BC /* KBaseModel.h */; };
+		452F68431CD342B500CE50BC /* KBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68301CD342B500CE50BC /* KBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452F68441CD342B500CE50BC /* KBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68311CD342B500CE50BC /* KBaseModel.m */; };
-		452F68451CD342B500CE50BC /* KBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68321CD342B500CE50BC /* KBaseView.h */; };
+		452F68451CD342B500CE50BC /* KBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68321CD342B500CE50BC /* KBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452F68461CD342B500CE50BC /* KBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68331CD342B500CE50BC /* KBaseView.m */; };
-		452F68471CD342B500CE50BC /* KBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68341CD342B500CE50BC /* KBaseViewController.h */; };
+		452F68471CD342B500CE50BC /* KBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68341CD342B500CE50BC /* KBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452F68481CD342B500CE50BC /* KBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68351CD342B500CE50BC /* KBaseViewController.m */; };
-		452F68491CD342B500CE50BC /* KBaseWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68361CD342B500CE50BC /* KBaseWebViewController.h */; };
+		452F68491CD342B500CE50BC /* KBaseWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68361CD342B500CE50BC /* KBaseWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452F684A1CD342B500CE50BC /* KBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68371CD342B500CE50BC /* KBaseWebViewController.m */; };
-		452F684B1CD342B500CE50BC /* UIView+SimpleFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68391CD342B500CE50BC /* UIView+SimpleFrame.h */; };
+		452F684B1CD342B500CE50BC /* UIView+SimpleFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F68391CD342B500CE50BC /* UIView+SimpleFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452F684C1CD342B500CE50BC /* UIView+SimpleFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F683A1CD342B500CE50BC /* UIView+SimpleFrame.m */; };
-		452F684D1CD342B500CE50BC /* KCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F683B1CD342B500CE50BC /* KCommon.h */; };
+		452F684D1CD342B500CE50BC /* KCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F683B1CD342B500CE50BC /* KCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452F684E1CD342B500CE50BC /* KCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F683C1CD342B500CE50BC /* KCommon.m */; };
-		452F684F1CD342B500CE50BC /* KDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F683D1CD342B500CE50BC /* KDefinition.h */; };
-		452F68501CD342B500CE50BC /* KAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F683F1CD342B500CE50BC /* KAlertController.h */; };
+		452F684F1CD342B500CE50BC /* KDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F683D1CD342B500CE50BC /* KDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452F68501CD342B500CE50BC /* KAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F683F1CD342B500CE50BC /* KAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452F68511CD342B500CE50BC /* KAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68401CD342B500CE50BC /* KAlertController.m */; };
 		52C509C01873377693264C4D654D3910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439B6634DDEDCAE2CA1AFBED1758911 /* Foundation.framework */; };
 		5F41EFFAC5FA1EE3A3E4C532BFE4DD1F /* KBaseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B90271418DA86377F860BD455B81612E /* KBaseKit-dummy.m */; };

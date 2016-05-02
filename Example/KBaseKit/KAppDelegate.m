@@ -7,13 +7,16 @@
 //
 
 #import "KAppDelegate.h"
+#import "KCommon.h"
+#import "KDefinition.h"
 
 @implementation KAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
+    [KCommon appicationInfomation];
+
     return YES;
 }
 

@@ -53,21 +53,12 @@
 
 #pragma mark - INFOMATION
 
-#define CO_LOG_GUBUN @"*********************************************************"
+#define CO_LOG_GUBUN @"******************************************************************************"
 
-+ (void)printInfomation
++ (void)appicationInfomation
 {
-    NSString *platform = [KCommon platform];
-
-    NSString *displayName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
-    if (displayName == nil || [displayName length] == 0) {
-        displayName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
-    }
-    NSString *applicationVersion = [KCommon versionNumber];
-    NSString *applicationBuild = [ KCommon buildNumber];
-
     NSString *systemName = [UIDevice currentDevice].systemName;
-    NSString *systemVersion = [NSString stringWithFormat:@"%@ %@",systemName, [UIDevice currentDevice].systemVersion];
+    NSString *systemVersion = [NSString stringWithFormat:@"%@ %@",systemName, [KCommon systemVersion]];
     
     NSString *screenWidth = [NSString stringWithFormat:@"%.f pixel", [[UIScreen mainScreen] bounds].size.width];
     NSString *screenHeight = [NSString stringWithFormat:@"%.f pixel", [[UIScreen mainScreen] bounds].size.height];
@@ -75,14 +66,16 @@
 
     [KCommon beautifulLog:@"" value:CO_LOG_GUBUN];
     [KCommon beautifulLog:@"" value:@""];
-    [KCommon beautifulLog:@"Application DisplayName" value:displayName];
-    [KCommon beautifulLog:@"Application Identifier" value:[[NSBundle mainBundle] bundleIdentifier]];
-    [KCommon beautifulLog:@"Application Version" value:applicationVersion];
-    [KCommon beautifulLog:@"Application Build" value:applicationBuild];
-    [KCommon beautifulLog:@"" value:@""];    [KCommon beautifulLog:@"Platform" value:platform];
+    [KCommon beautifulLog:@"Application DisplayName" value:[KCommon displayName]];
+    [KCommon beautifulLog:@"Application Identifier" value:[KCommon identifier]];
+    [KCommon beautifulLog:@"Application Version" value:[KCommon versionNumber]];
+    [KCommon beautifulLog:@"Application Build" value:[KCommon buildNumber]];
+    [KCommon beautifulLog:@"" value:@""];
+    [KCommon beautifulLog:@"Platform" value:[KCommon platform]];
     [KCommon beautifulLog:@"Device Model" value:[UIDevice currentDevice].model];
     [KCommon beautifulLog:@"System Version" value:systemVersion];
-    [KCommon beautifulLog:@"" value:@""];    [KCommon beautifulLog:@"Screen Width" value:screenWidth];
+    [KCommon beautifulLog:@"" value:@""];
+    [KCommon beautifulLog:@"Screen Width" value:screenWidth];
     [KCommon beautifulLog:@"Screen Height" value:screenHeight];
     [KCommon beautifulLog:@"StatusBar Height" value:statusBarHeight];
     [KCommon beautifulLog:@"" value:@""];
@@ -106,7 +99,8 @@
     printf("\n%s", [str cStringUsingEncoding:NSUTF8StringEncoding]);
 }
 
-+ (NSString *) platform{
++ (NSString *)platform
+{
     size_t size;
     sysctlbyname("hw.machine", NULL, &size, NULL, 0);
     char *machine = malloc(size);
@@ -114,6 +108,21 @@
     NSString *platform = [NSString stringWithCString:machine encoding:NSUTF8StringEncoding];
     free(machine);
     return platform;
+}
+
++ (NSString *)displayName
+{
+    NSString *displayName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
+    if (displayName == nil || [displayName length] == 0) {
+        displayName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
+    }
+    
+    return displayName;
+}
+
++ (NSString *)identifier
+{
+    return [[NSBundle mainBundle] bundleIdentifier];
 }
 
 + (NSString *)versionNumber

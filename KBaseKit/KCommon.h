@@ -17,9 +17,11 @@
 
 + (instancetype)shared;
 
-+ (void)printInfomation;
-
++ (void)appicationInfomation;
 /*! 앱 버전 정보 */
++ (NSString *)platform;
++ (NSString *)displayName;
++ (NSString *)identifier;
 + (NSString *)versionNumber;
 + (NSString *)buildNumber;
 + (NSString *)systemVersion;
