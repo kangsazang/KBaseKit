@@ -183,8 +183,8 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				45656F661CD83ED800EA5FA6 /* KBaseKit_Example */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				45656F661CD83ED800EA5FA6 /* KBaseKit_Example */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				4218AAE20D0483687B10691D /* Pods */,
