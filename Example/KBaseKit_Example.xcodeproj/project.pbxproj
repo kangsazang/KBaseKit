@@ -7,37 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45656F7A1CD83ED800EA5FA6 /* KAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45656F691CD83ED800EA5FA6 /* KAppDelegate.m */; };
+		45656F7C1CD83ED800EA5FA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45656F6C1CD83ED800EA5FA6 /* main.m */; };
+		45656F7F1CD83ED800EA5FA6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45656F761CD83ED800EA5FA6 /* Images.xcassets */; };
+		45656F811CD83F0800EA5FA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45656F831CD83F0800EA5FA6 /* Main.storyboard */; };
+		45656F891CD83F8D00EA5FA6 /* KIntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45656F881CD83F8D00EA5FA6 /* KIntroViewController.m */; };
+		45656F8C1CD83FD300EA5FA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45656F8A1CD83FD300EA5FA6 /* LaunchScreen.storyboard */; };
+		45656F8F1CD8407700EA5FA6 /* KRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45656F8E1CD8407700EA5FA6 /* KRootViewController.m */; };
+		45656F921CD8408800EA5FA6 /* KMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45656F911CD8408800EA5FA6 /* KMainViewController.m */; };
 		45834BF31CD3519D0091817D /* KBaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45834BF21CD3519D0091817D /* KBaseKit.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* KAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* KAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* KViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* KViewController.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		36C708CCD44BA498B19633D2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		382A185B61EFB8F3271818B2 /* Pods-KBaseKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBaseKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KBaseKit_Tests/Pods-KBaseKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		45656F681CD83ED800EA5FA6 /* KAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAppDelegate.h; sourceTree = "<group>"; };
+		45656F691CD83ED800EA5FA6 /* KAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAppDelegate.m; sourceTree = "<group>"; };
+		45656F6A1CD83ED800EA5FA6 /* KBaseKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KBaseKit-Info.plist"; sourceTree = "<group>"; };
+		45656F6B1CD83ED800EA5FA6 /* KBaseKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KBaseKit-Prefix.pch"; sourceTree = "<group>"; };
+		45656F6C1CD83ED800EA5FA6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45656F761CD83ED800EA5FA6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45656F821CD83F0800EA5FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45656F871CD83F8D00EA5FA6 /* KIntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIntroViewController.h; sourceTree = "<group>"; };
+		45656F881CD83F8D00EA5FA6 /* KIntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIntroViewController.m; sourceTree = "<group>"; };
+		45656F8B1CD83FD300EA5FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45656F8D1CD8407700EA5FA6 /* KRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRootViewController.h; sourceTree = "<group>"; };
+		45656F8E1CD8407700EA5FA6 /* KRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRootViewController.m; sourceTree = "<group>"; };
+		45656F901CD8408800EA5FA6 /* KMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMainViewController.h; sourceTree = "<group>"; };
+		45656F911CD8408800EA5FA6 /* KMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMainViewController.m; sourceTree = "<group>"; };
 		45834BF21CD3519D0091817D /* KBaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KBaseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/KBaseKit-akuvpyqperatunbcdakekjysvrro/Build/Products/Debug-iphoneos/KBaseKit.framework"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* KBaseKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBaseKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* KBaseKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KBaseKit-Info.plist"; sourceTree = "<group>"; };
-		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* KBaseKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KBaseKit-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* KAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* KAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* KViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* KViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KViewController.m; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9B661F861871A3C0DE247454 /* Pods-KBaseKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBaseKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KBaseKit_Tests/Pods-KBaseKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BBFD2C5272FAB339C02EDF1D /* KBaseKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KBaseKit.podspec; path = ../KBaseKit.podspec; sourceTree = "<group>"; };
 		D9429886CB58FCB0B48158E5 /* Pods_KBaseKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KBaseKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,11 +79,112 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		45656F661CD83ED800EA5FA6 /* KBaseKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				45656F671CD83ED800EA5FA6 /* AppDelegate */,
+				45656F6D1CD83ED800EA5FA6 /* Common */,
+				45656F711CD83ED800EA5FA6 /* Manager */,
+				45656F6E1CD83ED800EA5FA6 /* Controller */,
+				45656F721CD83ED800EA5FA6 /* Resource */,
+			);
+			path = KBaseKit_Example;
+			sourceTree = "<group>";
+		};
+		45656F671CD83ED800EA5FA6 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				45656F681CD83ED800EA5FA6 /* KAppDelegate.h */,
+				45656F691CD83ED800EA5FA6 /* KAppDelegate.m */,
+				45656F6A1CD83ED800EA5FA6 /* KBaseKit-Info.plist */,
+				45656F6B1CD83ED800EA5FA6 /* KBaseKit-Prefix.pch */,
+				45656F6C1CD83ED800EA5FA6 /* main.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		45656F6D1CD83ED800EA5FA6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		45656F6E1CD83ED800EA5FA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45656F841CD83F6F00EA5FA6 /* Intro */,
+				45656F861CD83F6F00EA5FA6 /* Root */,
+				45656F851CD83F6F00EA5FA6 /* Main */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		45656F711CD83ED800EA5FA6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		45656F721CD83ED800EA5FA6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				45656F831CD83F0800EA5FA6 /* Main.storyboard */,
+				45656F8A1CD83FD300EA5FA6 /* LaunchScreen.storyboard */,
+				45656F761CD83ED800EA5FA6 /* Images.xcassets */,
+				45656F781CD83ED800EA5FA6 /* Movie */,
+				45656F751CD83ED800EA5FA6 /* Fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		45656F751CD83ED800EA5FA6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		45656F781CD83ED800EA5FA6 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		45656F841CD83F6F00EA5FA6 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				45656F871CD83F8D00EA5FA6 /* KIntroViewController.h */,
+				45656F881CD83F8D00EA5FA6 /* KIntroViewController.m */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		45656F851CD83F6F00EA5FA6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				45656F901CD8408800EA5FA6 /* KMainViewController.h */,
+				45656F911CD8408800EA5FA6 /* KMainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		45656F861CD83F6F00EA5FA6 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				45656F8D1CD8407700EA5FA6 /* KRootViewController.h */,
+				45656F8E1CD8407700EA5FA6 /* KRootViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				45656F661CD83ED800EA5FA6 /* KBaseKit_Example */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* Example for KBaseKit */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				4218AAE20D0483687B10691D /* Pods */,
@@ -104,32 +211,6 @@
 				F929F31D7C27056827F85FD6 /* Pods_KBaseKit_Tests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6003F593195388D20070C39A /* Example for KBaseKit */ = {
-			isa = PBXGroup;
-			children = (
-				6003F59C195388D20070C39A /* KAppDelegate.h */,
-				6003F59D195388D20070C39A /* KAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* KViewController.h */,
-				6003F5A6195388D20070C39A /* KViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
-				6003F594195388D20070C39A /* Supporting Files */,
-			);
-			name = "Example for KBaseKit";
-			path = KBaseKit;
-			sourceTree = "<group>";
-		};
-		6003F594195388D20070C39A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6003F595195388D20070C39A /* KBaseKit-Info.plist */,
-				6003F596195388D20070C39A /* InfoPlist.strings */,
-				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* KBaseKit-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
@@ -175,7 +256,7 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Chans;
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "KBaseKit" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "KBaseKit_Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -198,9 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				45656F7F1CD83ED800EA5FA6 /* Images.xcassets in Resources */,
+				45656F8C1CD83FD300EA5FA6 /* LaunchScreen.storyboard in Resources */,
+				45656F811CD83F0800EA5FA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,21 +340,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* KAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* KViewController.m in Sources */,
-				6003F59A195388D20070C39A /* main.m in Sources */,
+				45656F7C1CD83ED800EA5FA6 /* main.m in Sources */,
+				45656F891CD83F8D00EA5FA6 /* KIntroViewController.m in Sources */,
+				45656F8F1CD8407700EA5FA6 /* KRootViewController.m in Sources */,
+				45656F921CD8408800EA5FA6 /* KMainViewController.m in Sources */,
+				45656F7A1CD83ED800EA5FA6 /* KAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+		45656F831CD83F0800EA5FA6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6003F597195388D20070C39A /* en */,
+				45656F821CD83F0800EA5FA6 /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45656F8A1CD83FD300EA5FA6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45656F8B1CD83FD300EA5FA6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -357,10 +448,9 @@
 			baseConfigurationReference = ECD6722C2041E0DB17CD0B7C /* Pods-KBaseKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KBaseKit/KBaseKit-Prefix.pch";
-				INFOPLIST_FILE = "KBaseKit/KBaseKit-Info.plist";
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/AppDelegate/KBaseKit-Prefix.pch";
+				INFOPLIST_FILE = "$(PRODUCT_NAME)/AppDelegate/KBaseKit-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,10 +463,9 @@
 			baseConfigurationReference = E7209124305C3B4C6E5D4D79 /* Pods-KBaseKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KBaseKit/KBaseKit-Prefix.pch";
-				INFOPLIST_FILE = "KBaseKit/KBaseKit-Info.plist";
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/AppDelegate/KBaseKit-Prefix.pch";
+				INFOPLIST_FILE = "$(PRODUCT_NAME)/AppDelegate/KBaseKit-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -387,7 +476,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "KBaseKit" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "KBaseKit_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,

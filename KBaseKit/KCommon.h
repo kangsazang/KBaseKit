@@ -11,11 +11,13 @@
 
 @interface KCommon : KBaseManager
 
-@property (nonatomic) BOOL debugMode; // default YES;
-
 #pragma mark - INFOMATION
 
 + (instancetype)shared;
+
+/*! DebugMode .... Default YES */
++ (BOOL)isDebugMode;
++ (void)setDebugMode:(BOOL)debugMode;
 
 + (void)appicationInfomation;
 /*! 앱 버전 정보 */

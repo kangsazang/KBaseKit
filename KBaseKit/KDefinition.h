@@ -55,8 +55,11 @@
  |
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-#define KAlert(MSG)     if(K_DEV_MODE) { [[[UIAlertView alloc] initWithTitle:@"DEUBG Alert" message:MSG delegate:nil cancelButtonTitle:@"확인" otherButtonTitles:nil] show]; }
-
+#if DEBUG
+    #define KDAlert(MSG)     [[[UIAlertView alloc] initWithTitle:@"DEUBG Alert" message:MSG delegate:nil cancelButtonTitle:@"확인" otherButtonTitles:nil] show];
+#else
+    #define KDAlert(MSG)     do { } while (0)
+#endif
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

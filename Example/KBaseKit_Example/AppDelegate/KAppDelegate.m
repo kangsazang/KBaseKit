@@ -8,15 +8,16 @@
 
 #import "KAppDelegate.h"
 #import "KCommon.h"
-#import "KDefinition.h"
 
 @implementation KAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // 'KBaseKit.h' imported in 'KBaseKit-Prefix.pch'
     [KCommon appicationInfomation];
-
+    
     return YES;
 }
 

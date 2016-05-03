@@ -25,6 +25,7 @@
 		452F684F1CD342B500CE50BC /* KDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F683D1CD342B500CE50BC /* KDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452F68501CD342B500CE50BC /* KAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 452F683F1CD342B500CE50BC /* KAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452F68511CD342B500CE50BC /* KAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F68401CD342B500CE50BC /* KAlertController.m */; };
+		45656F411CD8340600EA5FA6 /* KBaseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 45656F401CD832FC00EA5FA6 /* KBaseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52C509C01873377693264C4D654D3910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439B6634DDEDCAE2CA1AFBED1758911 /* Foundation.framework */; };
 		5F41EFFAC5FA1EE3A3E4C532BFE4DD1F /* KBaseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B90271418DA86377F860BD455B81612E /* KBaseKit-dummy.m */; };
 		7F1525CB1AD6D4AF2A3FA2234837CB98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439B6634DDEDCAE2CA1AFBED1758911 /* Foundation.framework */; };
@@ -66,6 +67,7 @@
 		452F683D1CD342B500CE50BC /* KDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDefinition.h; sourceTree = "<group>"; };
 		452F683F1CD342B500CE50BC /* KAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAlertController.h; sourceTree = "<group>"; };
 		452F68401CD342B500CE50BC /* KAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAlertController.m; sourceTree = "<group>"; };
+		45656F401CD832FC00EA5FA6 /* KBaseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBaseKit.h; sourceTree = "<group>"; };
 		48951FCF2D79B8BDC1898B5659231AA7 /* Pods-KBaseKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KBaseKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4C070D06EA1D7A70CB62AFC0D9CE4C81 /* KBaseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KBaseKit.modulemap; sourceTree = "<group>"; };
 		526BC89AD53219F75B9A2F25D06CA258 /* Pods-KBaseKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KBaseKit_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -114,11 +116,12 @@
 		452F682C1CD342B500CE50BC /* KBaseKit */ = {
 			isa = PBXGroup;
 			children = (
-				452F682D1CD342B500CE50BC /* Base */,
-				452F68381CD342B500CE50BC /* Categorys */,
+				45656F401CD832FC00EA5FA6 /* KBaseKit.h */,
 				452F683B1CD342B500CE50BC /* KCommon.h */,
 				452F683C1CD342B500CE50BC /* KCommon.m */,
 				452F683D1CD342B500CE50BC /* KDefinition.h */,
+				452F682D1CD342B500CE50BC /* Base */,
+				452F68381CD342B500CE50BC /* Categorys */,
 				452F683E1CD342B500CE50BC /* UI */,
 			);
 			path = KBaseKit;
@@ -261,6 +264,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45656F411CD8340600EA5FA6 /* KBaseKit.h in Headers */,
 				B50CA9ECA95EDC92DE689BF2AFD02CE2 /* KBaseKit-umbrella.h in Headers */,
 				452F68411CD342B500CE50BC /* KBaseManager.h in Headers */,
 				452F684F1CD342B500CE50BC /* KDefinition.h in Headers */,

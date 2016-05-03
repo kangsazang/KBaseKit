@@ -17,7 +17,7 @@
                BlueprintIdentifier = "6003F589195388D20070C39A"
                BuildableName = "KBaseKit_Example.app"
                BlueprintName = "KBaseKit_Example"
-               ReferencedContainer = "container:KBaseKit.xcodeproj">
+               ReferencedContainer = "container:KBaseKit_Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "6003F5AD195388D20070C39A"
                BuildableName = "KBaseKit_Tests.xctest"
                BlueprintName = "KBaseKit_Tests"
-               ReferencedContainer = "container:KBaseKit.xcodeproj">
+               ReferencedContainer = "container:KBaseKit_Example.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "6003F589195388D20070C39A"
             BuildableName = "KBaseKit_Example.app"
             BlueprintName = "KBaseKit_Example"
-            ReferencedContainer = "container:KBaseKit.xcodeproj">
+            ReferencedContainer = "container:KBaseKit_Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,7 +68,7 @@
             BlueprintIdentifier = "6003F589195388D20070C39A"
             BuildableName = "KBaseKit_Example.app"
             BlueprintName = "KBaseKit_Example"
-            ReferencedContainer = "container:KBaseKit.xcodeproj">
+            ReferencedContainer = "container:KBaseKit_Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -87,7 +87,7 @@
             BlueprintIdentifier = "6003F589195388D20070C39A"
             BuildableName = "KBaseKit_Example.app"
             BlueprintName = "KBaseKit_Example"
-            ReferencedContainer = "container:KBaseKit.xcodeproj">
+            ReferencedContainer = "container:KBaseKit_Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

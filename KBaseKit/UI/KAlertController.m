@@ -50,10 +50,21 @@
         window = [[UIApplication sharedApplication].delegate window];
     }
     UIViewController *rootViewController = window.rootViewController;
+    UIViewController *target = [KAlertController topPresentedViewController:rootViewController];
 
-    [rootViewController presentViewController:alert
-                                     animated:YES
-                                   completion:nil];
+    [target presentViewController:alert
+                         animated:YES
+                       completion:nil];
+}
+
++ (id)topPresentedViewController:(UIViewController *)vc
+{
+    UIViewController *target = vc;
+    if (vc.presentedViewController && vc != vc.presentedViewController) {
+        target = [KAlertController topPresentedViewController:vc.presentedViewController];
+    }
+    
+    return target;
 }
 
 + (void)showConfrimTitle:(NSString *)title

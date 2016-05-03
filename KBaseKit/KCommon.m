@@ -6,12 +6,13 @@
 //  Copyright © 2016년 Chans. All rights reserved.
 //
 
-#import "KDefinition.h"
 #import "KCommon.h"
+#import "KDefinition.h"
 #include <sys/types.h>
 #include <sys/sysctl.h>
 
 @interface KCommon ()
+
 @end
 
 #define KFIRST_LUNCH_FINISHED_KEY   @"KFirst_Lunch_Finished_Key"
@@ -40,12 +41,12 @@
 }
 
 
-- (BOOL)debugMode
++ (BOOL)isDebugMode
 {
     return [[NSUserDefaults standardUserDefaults] boolForKey:KDEBUG_MODE_KEY];
 }
 
-- (void)setDebugMode:(BOOL)debugMode
++ (void)setDebugMode:(BOOL)debugMode
 {
     [[NSUserDefaults standardUserDefaults] setBool:debugMode forKey:KDEBUG_MODE_KEY];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -79,24 +80,63 @@
     [KCommon beautifulLog:@"Screen Height" value:screenHeight];
     [KCommon beautifulLog:@"StatusBar Height" value:statusBarHeight];
     [KCommon beautifulLog:@"" value:@""];
+    
+#if DEBUG
+    [KCommon beautifulLog:@"DEBUG" value:@"YES"];
+#else
+    [KCommon beautifulLog:@"DEBUG" value:@"NO"];
+#endif
+    
+    
+    [KCommon beautifulLog:@"DEV MODE" value:[KCommon isDebugMode] ? @"YES" : @"NO"];
+    
+    [KCommon beautifulLog:@"" value:@""];
+
+    /* 스토리보드 관련 로그 작업 중.
+    NSString * resourcePath = [[NSBundle mainBundle] resourcePath];
+    NSArray * resourceContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:resourcePath error:nil];
+    
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSLog(@"%@",[bundle objectForInfoDictionaryKey:@"UIMainStoryboardFile"]);
+
+    int storyBoardCount = 1;
+    for (NSString *path in resourceContents) {
+        if ([path rangeOfString:@".storyboard"].length > 0) {
+            NSString *logName = [NSString stringWithFormat:@"StoryBoard %d",storyBoardCount];
+            [KCommon beautifulLog:logName value:path];
+            storyBoardCount++;
+        }
+    }
+     */
+    
+    [KCommon beautifulLog:@"" value:@""];
+
+
     [KCommon beautifulLog:@"" value:[NSString stringWithFormat:@"%@\n\n",CO_LOG_GUBUN]];
+    
+    
+
 }
 
 + (void)beautifulLog:(NSString *)name value:(NSString *)value
 {
     NSString *gubun = CO_LOG_GUBUN;
     NSInteger gubunLenth = gubun.length;
-    NSMutableString *str = [[NSMutableString alloc] initWithFormat:@"* %@",name];
-    
-    NSInteger space = gubunLenth - (str.length + value.length);
-    
-    for (int i = 0; i < space; i++) {
-        [str appendFormat:@" "];
+    if ([value rangeOfString:CO_LOG_GUBUN].location == 0) {
+        SYSLog(@"%@",value);
     }
-    
-    [str appendString:value];
-    
-    printf("\n%s", [str cStringUsingEncoding:NSUTF8StringEncoding]);
+    else
+    {
+        NSMutableString *str = [NSMutableString stringWithFormat:@"* %@",name];
+        NSInteger space = gubunLenth - (str.length + value.length + 2);
+        for (int i = 0; i < space; i++) {
+            [str appendFormat:@" "];
+        }
+        [str appendString:value];
+        [str appendString:@" *"];
+        
+        SYSLog(@"%@",str);
+    }
 }
 
 + (NSString *)platform
