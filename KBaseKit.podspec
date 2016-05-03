@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KBaseKit"
-  s.version          = "9"
+  s.version          = "10"
   s.summary          = "iOS Base Project Kit"
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Chans" => "monster@knagc.tk" }
   s.source           = { :git => "https://github.com/kangsazang/KBaseKit.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/kangsazang'
+  s.social_media_url = 'https://twitter.com/kangsazang'
 
   s.ios.deployment_target = '8.0'
 
