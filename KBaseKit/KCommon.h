@@ -20,6 +20,7 @@
 + (void)setDebugMode:(BOOL)debugMode;
 
 + (void)appicationInfomation;
+
 /*! 앱 버전 정보 */
 + (NSString *)platform;
 + (NSString *)displayName;
@@ -43,10 +44,6 @@
 + (NSDictionary*)urlParamParsing:(NSString*)url;
 + (NSString *)urlParamMerge:(NSString *)url param:(NSDictionary *)param;
 
-/*! Encoding */
-+ (NSString *)urlEncoding:(NSString *)value;
-+ (NSString *)urlDecoding:(NSString *)value;
-
 /*! Json Parse..  */
 + (id)jsonParse:(NSData *)jsonData;
 + (NSString *)stringByRemovingControlCharacters: (NSString *)inputString;
@@ -59,6 +56,8 @@
 /*! 기타 */
 + (BOOL)findString:(NSString *)str find:(NSString *)_findStr;
 
++ (UIViewController *)topViewController;
++ (UIViewController *)topViewControllerWithRootViewController:(UIViewController *)rootViewController;
 
 
 

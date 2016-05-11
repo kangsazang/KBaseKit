@@ -1,5 +1,5 @@
 //
-//  KAlertController.h
+//  UIAlertController+KAdditional.h
 //  KBaseLib
 //
 //  Created by KangC  on 2016. 4. 19..
@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KAlertController : UIAlertController
+@interface UIAlertController (KAdditional)
+
++ (void)showMessage:(NSString *)title;
+
++ (void)showTitle:(NSString *)title
+          message:(NSString *)message;
 
 /*!
  @Desc                      기본 알럿, 자동으로 노출됨, Window RootViewController에서 노출됨

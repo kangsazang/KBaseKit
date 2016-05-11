@@ -87,7 +87,6 @@
     [KCommon beautifulLog:@"DEBUG" value:@"NO"];
 #endif
     
-    
     [KCommon beautifulLog:@"DEV MODE" value:[KCommon isDebugMode] ? @"YES" : @"NO"];
     
     [KCommon beautifulLog:@"" value:@""];
@@ -279,53 +278,6 @@
     return returnUrl;
 }
 
-/*! Encoding */
-
-+ (NSString *)urlEncoding:(NSString *)value
-{
-#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_9_0
-    /*!
-     URLFragmentAllowedCharacterSet  "#%<>[\]^`{|}
-     URLHostAllowedCharacterSet      "#%/<>?@\^`{|}
-     URLPasswordAllowedCharacterSet  "#%/:<>?@[\]^`{|}
-     URLPathAllowedCharacterSet      "#%;<>?[\]^`{|}
-     URLQueryAllowedCharacterSet     "#%<>[\]^`{|}
-     URLUserAllowedCharacterSet      "#%/:<>?@[\]^`
-
-     NSCharacterSet *customCharacterset = [[NSCharacterSet characterSetWithCharactersInString:@"your characters"] invertedSet];
-     */
-    
-    NSCharacterSet *characterSet = [[NSCharacterSet characterSetWithCharactersInString:@"/%&=?$#+-~@<>|\\*,.()[]{}^! "] invertedSet];
-    return [value stringByAddingPercentEncodingWithAllowedCharacters:characterSet];
-#else
-    NSString * encodedString = (__bridge_transfer NSString *)
-    CFURLCreateStringByAddingPercentEscapes(NULL,
-                                            (CFStringRef)value,
-                                            NULL,
-                                            CFSTR("/%&=?$#+-~@<>|\\*,.()[]{}^!"),
-                                            CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
-    return encodedString;
-#endif
-    
-}
-
-+ (NSString *)urlDecoding:(NSString *)value
-{
-    
-#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_9_0
-    return value.stringByRemovingPercentEncoding;
-#else
-    NSString *decodedString = (__bridge_transfer NSString *)
-    CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
-                                                            (__bridge CFStringRef)value,
-                                                            CFSTR(""),
-                                                            CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
-    
-    return decodedString;
-#endif
-    
-}
-
 /*! Json Parse..  */
 
 + (id)jsonParse:(NSData *)jsonData
@@ -402,6 +354,37 @@
     }
     
     return NO;
+}
+
++ (UIViewController *)topViewController {
+    return [KCommon topViewControllerWithRootViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
+}
+
++ (UIViewController *)topViewControllerWithRootViewController:(UIViewController *)rootViewController {
+    if ([rootViewController isKindOfClass:[UITabBarController class]]) {
+        UITabBarController *tabBarController = (UITabBarController *)rootViewController;
+        return [KCommon topViewControllerWithRootViewController:tabBarController.selectedViewController];
+    }
+    else if ([rootViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *navigationController = (UINavigationController *)rootViewController;
+        return [KCommon topViewControllerWithRootViewController:navigationController.visibleViewController];
+    }
+    else if ([rootViewController isKindOfClass:[UISplitViewController class]]) {
+        UISplitViewController *splitViewController = (UISplitViewController *)rootViewController;
+        return [KCommon topViewControllerWithRootViewController:splitViewController.viewControllers[1]];
+    }
+    else if (rootViewController.presentedViewController) {
+        UIViewController *presentedViewController = rootViewController.presentedViewController;
+        if ([presentedViewController isKindOfClass:[UIAlertController class]]) {
+            return rootViewController;
+        }
+        else {
+            return [KCommon topViewControllerWithRootViewController:presentedViewController];
+        }
+    }
+    else {
+        return rootViewController;
+    }
 }
 
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KBaseKit"
-  s.version          = "10"
+  s.version          = "11"
   s.summary          = "iOS Base Project Kit"
 
 # This description is used to generate tags and improve search results.

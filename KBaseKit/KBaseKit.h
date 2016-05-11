@@ -29,7 +29,9 @@
 
     /* Util */
 
-    /* UI */
-    #import "KAlertController.h"
+    /* Categorys */
+    #import "UIView+KAdditional.h"
+    #import "UIAlertController+KAdditional.h"
+    #import "NSString+KAdditional.h"
 
 #endif
