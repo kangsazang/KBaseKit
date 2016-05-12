@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -35,11 +35,11 @@
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="R4F-DK-o8O" kind="showDetail" action="showViewController:sender:" id="C1k-4C-neY"/>
+                                    <segue destination="R4F-DK-o8O" kind="showDetail" identifier="MoveRootViewController" action="showViewController:sender:" id="C1k-4C-neY"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="vde-Tf-vQE" secondAttribute="bottom" id="FJm-tI-fIF"/>
                             <constraint firstAttribute="trailing" secondItem="vde-Tf-vQE" secondAttribute="trailing" id="Rwc-Xk-Zu0"/>
@@ -49,6 +49,13 @@
                             <constraint firstItem="vde-Tf-vQE" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="twy-4R-JSQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btn" destination="m3s-Vb-Djc" id="sUT-4c-H14"/>
+                        <outlet property="constraintBtnBottom" destination="h7V-cC-rYI" id="Lk0-S5-AEP"/>
+                        <outlet property="constraintBtnH" destination="UdO-hb-sNv" id="FXr-zm-rby"/>
+                        <outlet property="constraintBtnLeft" destination="cYw-H4-eIj" id="SGf-BL-10E"/>
+                        <outlet property="constraintBtnW" destination="NWf-X7-2MD" id="2u9-6K-FCc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,8 +124,21 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome MainViewController" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVb-bO-a55">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="rYi-YC-JWi"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rYi-YC-JWi"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="rYi-YC-JWi"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dC-eV-Tv9">
                                 <rect key="frame" x="30" y="50" width="100" height="50"/>
@@ -146,7 +166,7 @@
                                 <rect key="frame" x="30" y="170" width="540" height="30"/>
                                 <color key="backgroundColor" red="0.28235294119999998" green="0.57254901960000004" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="1XO-jj-tca"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="1XO-jj-tca"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -220,6 +240,7 @@
                             <constraint firstItem="awA-Zz-QSm" firstAttribute="top" secondItem="r05-bc-pHr" secondAttribute="bottom" constant="15" id="cXw-P6-1yH"/>
                             <constraint firstItem="jVb-bO-a55" firstAttribute="top" secondItem="kug-vf-9or" secondAttribute="bottom" id="eCy-By-bfY"/>
                             <constraint firstAttribute="trailing" secondItem="jVb-bO-a55" secondAttribute="trailing" id="hOp-Vq-IgG"/>
+                            <constraint firstItem="jVb-bO-a55" firstAttribute="top" secondItem="cEH-mg-odp" secondAttribute="bottom" id="oCT-Th-rZ9"/>
                             <constraint firstItem="awA-Zz-QSm" firstAttribute="leading" secondItem="22t-Sd-a2Z" secondAttribute="trailing" id="qnt-Uq-7H7"/>
                             <constraint firstItem="059-6J-BGE" firstAttribute="leading" secondItem="DSE-vs-wvd" secondAttribute="leading" constant="30" id="sm6-fU-git"/>
                             <constraint firstAttribute="trailing" secondItem="r05-bc-pHr" secondAttribute="trailing" constant="30" id="uY0-pc-5X4"/>
@@ -228,6 +249,17 @@
                             <constraint firstAttribute="trailing" secondItem="qBf-Mg-z9A" secondAttribute="trailing" constant="30" id="zHE-5v-46U"/>
                             <constraint firstItem="jVb-bO-a55" firstAttribute="leading" secondItem="DSE-vs-wvd" secondAttribute="leading" id="zds-5j-xnx"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="oCT-Th-rZ9"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="eCy-By-bfY"/>
+                                <include reference="oCT-Th-rZ9"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="labelResult" destination="r05-bc-pHr" id="yT7-nC-8ce"/>
